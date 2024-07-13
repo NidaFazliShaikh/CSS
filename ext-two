@@ -1,0 +1,30 @@
+
+.aaa{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+
+.main {
+    background-color: black;
+}
+
+
+
+.abc {
+    color: deeppink;
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+#xyz{
+    font-family: Verdana;
+    font-size: 20px;
+    margin-bottom:20px;
+    color:pink;
+}
