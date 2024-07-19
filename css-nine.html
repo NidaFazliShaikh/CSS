@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+
+    <style>
+
+.sidebar {
+        background-color: black;
+        width: 100px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow: auto;
+       }
+    .menu1 {
+        list-style: none;
+        padding: 50px 14px 20px 20px;
+        color: white;
+    }
+    .c1 {
+        padding-bottom: 80px;
+    }
+
+#hamburger-menu {
+          width: 20px;
+          height: 20px;
+          display: block;
+          border: none;
+          margin-left: 200px;
+          background: linear-gradient(
+            to bottom, 
+        red, red 20%, 
+            white 20%, white 40%, 
+            red 40%, red 60%, 
+            white 60%, white 80%, 
+            red 80%, red 100%
+            
+          );
+        }
+      
+        #hamburger-menu #sidebar-menu {
+          visibility: hidden;
+          position: fixed;
+          bottom: 0;
+          left: -250px;
+          width: 200px;
+          height: 100%;
+          background-color: red;
+          padding: 0px 10px;
+          box-sizing: border-box;
+        }
+        
+    .navbar {
+        background-color: black;
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+    .menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 15px;
+        color: white;
+    }
+
+
+    
+
+
+    .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-left: 160px;
+            margin-top: 60px;
+         }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            }
+            
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+    .container {
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            overflow: scroll;
+            margin-top: 20px;
+            margin-left: 160px;
+        }
+    .content {
+            width: 500px;
+            height: 400px;
+            background-color: lightyellow;
+        }
+
+
+        .text-block {
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            overflow: visible;
+            margin-top: 20px;
+            background-color: lightblue;
+            margin-left: 160px;
+        }
+
+
+        .image-container {
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            overflow:scroll;
+            margin-top: 180px;
+            margin-left: 100px;
+            
+        }
+        .image-container img {
+            width: 400px;
+            height: 300px;
+        }
+
+
+
+        .dropbtn1 {
+        background-color: gray;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        margin: 50px 100px;
+    }
+    .dropdown-content-overflow {
+        display: none;
+        position: absolute;
+        background-color:wheat;
+        width: 160px;
+        margin: 0px 100px;
+        overflow: auto;
+    }
+    .dropdown-content-overflow a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown-content-overflow a:hover {background-color: #ddd;}
+    .dropdown-overflow:hover .dropdown-content-overflow {display: block;}
+    .dropdown-overflow:hover .dropbtn1 {background-color:gray;}
+
+
+    .dropdown-overflow {
+            position: relative;
+            display: inline-block;
+            margin-left: 150px;
+            margin-top: 20px;
+        }
+        .dropdown-content-overflow {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            width: 160px;
+            height: 100px;
+            overflow: auto;
+            margin: 0;
+        }
+        .dropdown-content-overflow a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content-overflow a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown-overflow:hover .dropdown-content-overflow {
+            display: block;
+        }
+
+        span.p1 {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid black;
+            background-color: lightgreen;
+        }
+
+        span.p2 {
+            display: inline;
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid black;
+            background-color: lightgreen;
+        }
+
+        span.p3 {
+            display: block;
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid black;
+            background-color: lightgreen;
+        }
+
+        p {
+            margin-left: 150px;
+            margin-top: 50px;
+        }
+
+        
+
+        
+
+    
+
+
+
+
+   
+   
+    
+    
+</style>
+
+</head>
+<body>
+
+    
+
+    <button id="hamburger-menu"> 
+        <nav id="sidebar-menu"> 
+            
+          
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            
+    
+          </ul>
+        </nav>
+    </button>
+    <!--horizontal navigation bar-->
+    <nav class="navbar">
+        <ul class="menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <!--vertical sidebar-->
+    <nav class="sidebar">
+        <ul class="menu1">
+            <li class="c1">Home</li>
+            <li class="c1">About</li>
+            <li class="c1">Services</li>
+            <li class="c1">Contact</li>
+        </ul>
+    </nav>
+
+    <!--dropdown box-->
+
+    <div class="dropdown">
+        <button>Dropdown Menu</button>
+        <div class="dropdown-content">
+            <a href="#">HTML</a>
+            <a href="#">CSS</a>
+            <a href="#">Javascript</a>
+        </div>
+    </div>
+    
+
+      <!--overflow in a container-->
+    <div class="container">
+        <div class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsum error magni sed provident accusamus hic. Exercitationem voluptatem optio vitae saepe hic! Accusamus tempore unde cum vitae quas, autem sint?.
+        </div>
+    </div>
+
+    <!--overflow in a text block-->
+    <div class="text-block">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+    </div>
+
+    <!-- Overflow in an Image -->
+    <div class="image-container">
+        <img src="snow.jpg" alt="image">
+    </div>
+
+     <!-- Overflow in a Dropdown Menu -->
+     <div class="dropdown-overflow">
+        <button>Overflow Dropdown Menu</button>
+        <div class="dropdown-content-overflow">
+            <a href="#">HTML</a>
+            <a href="#">CSS</a>
+            <a href="#">Javascript</a>
+            <a href="#">Java</a>
+            </div>
+    </div>
+
+    <!--display inline block-->
+
+<p> 1] INLINE BLOCK : Lorem ipsum dolor sit amet consectetur adipisicing e    lit. Error tempore cumque suscipit <span class="p1">unde</span>molestias tempora provident quia, iste nostrum <span class="p1">ipsa</span> distinctio? Itaque, hic? Fugiat quam reprehenderit saepe accusantium aliquam ipsam illo dolor!</p>
+
+    <!--display inline-->
+<p> 2] INLINE : Lorem ipsum dolor sit amet consectetur adipisicing e    lit. Error tempore cumque suscipit <span class="p2">unde</span>molestias tempora provident quia, iste nostrum <span class="p2">ipsa</span> distinctio? Itaque, hic? Fugiat quam reprehenderit saepe accusantium aliquam ipsam illo dolor!</p>
+    
+    <!--display block-->
+<p> 3] BLOCK : Lorem ipsum dolor sit amet consectetur adipisicing e    lit. Error tempore cumque suscipit <span class="p3">unde</span>molestias tempora provident quia, iste nostrum <span class="p3">ipsa</span> distinctio? Itaque, hic? Fugiat quam reprehenderit saepe accusantium aliquam ipsam illo dolor!</p>
+
+<button id="hamburger-menu"> 
+    <nav id="sidebar-menu"> 
+        
+      
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Store</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        
+
+      </ul>
+    </nav>
+</button>
+</body>
+</html>
